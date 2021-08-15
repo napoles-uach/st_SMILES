@@ -4,7 +4,7 @@ import py3Dmol
 from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import AllChem
-import numpy as np
+
 st.title('Streamlit + RDKit + Py3DMOL :rocket:')
 def show(smi, style='stick'):
     mol = Chem.MolFromSmiles(smi)
