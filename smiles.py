@@ -5,7 +5,7 @@ from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import AllChem
 
-st.title('Streamlit + RDKit + Py3DMOL :rocket:')
+st.title('SMILES  + RDKit + Py3DMOL :smiley:')
 def show(smi, style='stick'):
     mol = Chem.MolFromSmiles(smi)
     mol = Chem.AddHs(mol)
