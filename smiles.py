@@ -67,12 +67,16 @@ with st.sidebar.expander('Rule One'):
 
 with st.sidebar.expander('Rule Two'):
   st.markdown('''
+  * Structures are hydrogen suppresed (Molecules represented without hydrogens)
+  * If enough bonds are not identified by the user, the system will assume that connections
+  are satisfied by hidrogens.
+  * The user can explicitly identify hydrogen bonds, but if so the interpreter will assume that all of them are fully identified.
   Note:
   
   *Because SMILES allows entry of all elements in the periodic table, 
   and also utilizes hydrogen suppression, the user should be aware of chemicals with two letters 
-  that could be misinterpreted by the computer. For example, 'Sc' could be interpreted as a sulfur 
-  atom connected to an aromatic carbon by a single bond, or it could be the symbol for scandium. 
+  that could be misinterpreted by the computer. For example, 'Sc' could be interpreted as a **sulfur**
+  atom connected to an aromatic **carbon** by a single bond, or it could be the symbol for **scandium**. 
   The SMILES interpreter gives priority to the interpretation of a single bond connecting a sulfur atom and an aromatic carbon. 
   To identify scandium the user should enter [Sc]*.
   ''')
