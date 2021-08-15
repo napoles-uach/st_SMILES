@@ -64,3 +64,8 @@ with st.sidebar.expander('Rule One'):
 
 🛑 A bond between two lower case atom symbols is *aromatic*.
 ''')
+
+with st.sidebar.expander('Rule Two'):
+  st.markdown('''
+  In progress ...
+  ''')
