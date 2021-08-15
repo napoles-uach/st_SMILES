@@ -84,7 +84,10 @@ with st.sidebar.expander('Rule Two'):
 
 with st.sidebar.expander('Rule Three'):
   st.markdown('''
-  In progress ...
+  ## Branches
+  * A branch from a chain is specified by placing the SMILES symbol(s) for the branch between parenthesis. 
+  * The string in parentheses is placed directly after the symbol for the atom to which it is connected. 
+  * If it is connected by a double or triple bond, the bond symbol immediately follows the left parenthesis.
   ''')
 
 with st.sidebar.expander('Rule Four'):
