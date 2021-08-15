@@ -85,4 +85,4 @@ with st.sidebar.expander('Rule Five'):
   In progress ...
   ''')
 st.sidebar.markdown('Author: José Manuel Nápoles ([@napoles3d](https://twitter.com/napoles3D))')
-st.sidebar.write('Source: https://archive.epa.gov/med/med_archive_03/web/html/smiles.html')
+st.sidebar.write('Info about SMILES: https://archive.epa.gov/med/med_archive_03/web/html/smiles.html')
