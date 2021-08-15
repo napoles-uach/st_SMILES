@@ -67,6 +67,7 @@ with st.sidebar.expander('Rule One'):
 
 with st.sidebar.expander('Rule Two'):
   st.markdown('''
+  ## Simple chains
   * Structures are hydrogen suppresed (Molecules represented without hydrogens)
   * If enough bonds are not identified by the user, the system will assume that connections
   are satisfied by hidrogens.
