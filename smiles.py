@@ -84,3 +84,5 @@ with st.sidebar.expander('Rule Five'):
   st.markdown('''
   In progress ...
   ''')
+
+st.sidebar.write('Source: https://archive.epa.gov/med/med_archive_03/web/html/smiles.html')
