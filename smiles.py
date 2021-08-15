@@ -84,5 +84,5 @@ with st.sidebar.expander('Rule Five'):
   st.markdown('''
   In progress ...
   ''')
-st.sidebar.write('Author: José Manuel Nápoles (@napoles3d)')
+st.sidebar.markdown('Author: José Manuel Nápoles ([@napoles3d](https://twitter.com/napoles3D))')
 st.sidebar.write('Source: https://archive.epa.gov/med/med_archive_03/web/html/smiles.html')
