@@ -42,7 +42,7 @@ with c2:
   components.html(source_code, height = 400,width=400)
 
 ################ Sidebar ####################
-with st.sidebar.expander('Rule One'):
+with st.sidebar.expander('Rule One (Atoms and Bonds)'):
   st.markdown('''
 ## Atoms
 |If |then |
@@ -65,7 +65,7 @@ with st.sidebar.expander('Rule One'):
 🛑 A bond between two lower case atom symbols is *aromatic*.
 ''')
 
-with st.sidebar.expander('Rule Two'):
+with st.sidebar.expander('Rule Two (Simple Chains)'):
   st.markdown('''
   ## Simple chains
   * Structures are hydrogen suppresed (Molecules represented without hydrogens)
@@ -82,7 +82,7 @@ with st.sidebar.expander('Rule Two'):
   To identify scandium the user should enter [Sc]*.
   ''')
 
-with st.sidebar.expander('Rule Three'):
+with st.sidebar.expander('Rule Three (Branches)'):
   st.markdown('''
   ## Branches
   * A branch from a chain is specified by placing the SMILES symbol(s) for the branch between parenthesis. 
@@ -90,7 +90,7 @@ with st.sidebar.expander('Rule Three'):
   * If it is connected by a double or triple bond, the bond symbol immediately follows the left parenthesis.
   ''')
 
-with st.sidebar.expander('Rule Four'):
+with st.sidebar.expander('Rule Four (Rings)'):
   st.markdown('''
   ## Rings
   * SMILES allows a user to identify ring structures by using numbers to identify the opening and closing ring atom.
@@ -99,7 +99,7 @@ with st.sidebar.expander('Rule Four'):
   * If a double, single, or aromatic bond is used for the ring closure, the bond symbol is placed before the ring closure number.
   ''')
 
-with st.sidebar.expander('Rule Five'):
+with st.sidebar.expander('Rule Five (Charged atoms)'):
   st.markdown('''
   ## Charged atoms
   Charges on an atom can be used to override the knowledge regarding valence that is built into SMILES software. 
