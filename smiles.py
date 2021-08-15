@@ -40,3 +40,27 @@ with c1:
   st.image('mol.png')
 with c2:
   components.html(source_code, height = 400,width=400)
+
+################ Sidebar ####################
+with st.sidebar.expander('Rule One'):
+  st.markdown('''
+## Atoms
+|If |then |
+|----|----|
+| Non-aromatic atoms |Uper case letters |
+| Aromatic atoms |lower case letters |
+|Atomic symbols has more than one letter | The second is lower case |
+## Bonds
+| Bond type| Bond symbol |
+|---|---|
+|Simple | - |
+|Double|=|
+|Triple|#|
+|Aromatic|*|
+| Disconnected structures|. |
+
+### Example:
+ CC   👉 There is a non-aromatic carbon attached to another non-aromatic carbon by a single bond.
+
+🛑 A bond between two lower case atom symbols is *aromatic*.
+''')
