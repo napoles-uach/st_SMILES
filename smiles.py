@@ -69,3 +69,18 @@ with st.sidebar.expander('Rule Two'):
   st.markdown('''
   In progress ...
   ''')
+
+with st.sidebar.expander('Rule Three'):
+  st.markdown('''
+  In progress ...
+  ''')
+
+with st.sidebar.expander('Rule Four'):
+  st.markdown('''
+  In progress ...
+  ''')
+
+with st.sidebar.expander('Rule Five'):
+  st.markdown('''
+  In progress ...
+  ''')
