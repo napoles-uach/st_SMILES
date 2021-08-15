@@ -92,12 +92,19 @@ with st.sidebar.expander('Rule Three'):
 
 with st.sidebar.expander('Rule Four'):
   st.markdown('''
-  In progress ...
+  ## Rings
+  * SMILES allows a user to identify ring structures by using numbers to identify the opening and closing ring atom.
+  For example, in C1CCCCC1, the first carbon has a number '1' which connects by a single bond with the last carbon which also has a number '1'. 
+  The resulting structure is cyclohexane. Chemicals that have multiple rings may be identified by using different numbers for each ring.
+  * If a double, single, or aromatic bond is used for the ring closure, the bond symbol is placed before the ring closure number.
   ''')
 
 with st.sidebar.expander('Rule Five'):
   st.markdown('''
-  In progress ...
+  ## Charged atoms
+  Charges on an atom can be used to override the knowledge regarding valence that is built into SMILES software. 
+  The format for identifying a charged atom consists of the atom followed by brackets which enclose the charge on the atom. 
+  The number of charges may be explicitly stated ({-1}) or not ({-}). 
   ''')
 st.sidebar.markdown('Author: José Manuel Nápoles ([@napoles3d](https://twitter.com/napoles3D))')
 st.sidebar.write('Info about SMILES: https://archive.epa.gov/med/med_archive_03/web/html/smiles.html')
