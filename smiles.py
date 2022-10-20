@@ -7,7 +7,7 @@ from rdkit.Chem import Draw
 from rdkit.Chem import AllChem
 
 st.title('SMILES  + RDKit + Py3DMOL :smiley:')
-def show(smi, style='stick'):
+def showm(smi, style='stick'):
     mol = Chem.MolFromSmiles(smi)
     mol = Chem.AddHs(mol)
     AllChem.EmbedMolecule(mol)
@@ -33,15 +33,15 @@ m = Chem.MolFromSmiles(compound_smiles)
 Draw.MolToFile(m,'mol.png')
 
 
-show(compound_smiles)
-HtmlFile = open("viz.html", 'r', encoding='utf-8')
-source_code = HtmlFile.read() 
+
+#HtmlFile = open("viz.html", 'r', encoding='utf-8')
+#source_code = HtmlFile.read() 
 c1,c2=st.columns(2)
 with c1:
   st.write('Molecule :coffee:')
   st.image('mol.png')
 with c2:
-  components.html(source_code, height = 400,width=400)
+  showm(compound_smiles)
 
 ################ Sidebar ####################
 with st.sidebar.expander('Rule One (Atoms and Bonds)'):
