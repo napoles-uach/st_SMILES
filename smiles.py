@@ -1,6 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import py3Dmol
+from stmol import showmol
 from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import AllChem
@@ -19,11 +20,12 @@ def show(smi, style='stick'):
     view.zoomTo()
     view.show()
     view.render()
-    t =view.js()
-    f = open('viz.html', 'w')
-    f.write(t.startjs)
-    f.write(t.endjs)
-    f.close()
+    showmol(view)
+    #t =view.js()
+    #f = open('viz.html', 'w')
+    #f.write(t.startjs)
+    #f.write(t.endjs)
+    #f.close()
 
 compound_smiles=st.text_input('SMILES please','CC')
 m = Chem.MolFromSmiles(compound_smiles)
