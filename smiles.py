@@ -109,5 +109,5 @@ with st.sidebar.expander('Rule Five (Charged atoms)'):
   The number of charges may be explicitly stated ({-1}) or not ({-}). 
   ''')
 st.sidebar.markdown('Author: José Manuel Nápoles ([@napoles3d](https://twitter.com/napoles3D))')
-st.sidebar.write('Info about SMILES: https://archive.epa.gov/med/med_archive_03/web/html/smiles.html')
+#st.sidebar.write('Info about SMILES: https://archive.epa.gov/med/med_archive_03/web/html/smiles.html')
 st.sidebar.write("Blog Post: [TDS](https://towardsdatascience.com/molecular-visualization-in-streamlit-using-rdkit-and-py3dmol-part-2-657d28152753)")
