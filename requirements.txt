@@ -1,2 +1,3 @@
+stmol == 0.0.7
 py3dmol
 rdkit-pypi
